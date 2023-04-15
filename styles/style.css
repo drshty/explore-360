@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+.logo {
+   color: #283618;
+   font-size: 35px;
+   font-family: 'Clicker Script', cursive;
+}
+
+nav {
+   background-color: #fefae0;
+}
+
+.navigation a {
+   color: #283618;
+   position: relative;
+   font-size: 16px;
+   transition: all 0.5s ease;
+}
+
+.navigation a:hover {
+   color: #bc6c25;
+}
+
+.card-header {
+   background-color: #fefae0;
+   color: #bc6c25;
+}
+
+i {
+   color: #283618;
+   font-size: 30px;
+   transition: all 0.50s ease;
+}
+
+i:hover {
+   text-shadow: 0 0 5px #bc6c25;
+   color: #bc6c25;
+   cursor: pointer;
+   transform: translateX(5px);
+}
+
+.card-footer {
+   background-color: #fefae0;
+}
+
+.footer {
+   background-color: #fefae0;
+}
