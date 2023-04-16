@@ -1,211 +1,382 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 
 * {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .logo {
-   color: #283618;
-   font-size: 35px;
-   font-family: 'Clicker Script', cursive;
+  color: #283618;
+  font-size: 35px;
+  font-family: 'Clicker Script', cursive;
 }
 
 nav {
-   background-color: #fefae0;
+  background-color: #fefae0;
 }
 
 .navigation a {
-   color: #283618;
-   position: relative;
-   font-size: 16px;
-   transition: all 0.5s ease;
+  color: #283618;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.5s ease;
 }
 
 .navigation a:hover {
-   color: #bc6c25;
+  color: #bc6c25;
 }
 
 .card-header {
-   background-color: #fefae0;
-   color: #bc6c25;
+  background-color: #fefae0;
+  color: #bc6c25;
 }
 
 i {
-   color: #283618;
-   font-size: 30px;
-   transition: all 0.50s ease;
+  color: #283618;
+  font-size: 30px;
+  transition: all 0.50s ease;
 }
 
 i:hover {
-   text-shadow: 0 0 5px #bc6c25;
-   color: #bc6c25;
-   cursor: pointer;
-   transform: translateX(5px);
+  text-shadow: 0 0 5px #bc6c25;
+  color: #bc6c25;
+  cursor: pointer;
+  transform: translateX(5px);
 }
 
 .card-footer {
-   background-color: #fefae0;
+  background-color: #fefae0;
 }
 
 .footer {
-   background-color: #fefae0;
+  background-color: #fefae0;
 }
 
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-/******Tags******/
-body {
-   width: 100%;
-}
-
+/* ////////////////////////////////  KARAN  ///////////////////////////////////////////////////////////////////// */
 
 /**********Classes**********/
 .main-body {
-   background-repeat: no-repeat;
-   background-position: relative;
-   background-size: cover;
-   background-image: url("/assets/Images/Wonderhub/background_main.jpg");
-   font-family: "@Microsoft YaHei Light";
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
+  background-image: url("/assets/Images/Wonderhub/background_main.jpg");
+  font-family: "@Microsoft YaHei Light";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-container {
-   display: flex;
-   justify-content: center;
-   border-radius: 20px;
-   overflow: hidden;
-   width: 800px;
-   position: relative;
-   box-shadow: 0 0 15px #000000;
-   transition: box-shadow 0.5s ease-in-out;
-   margin: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 800px;
+  position: relative;
+  box-shadow: 0 0 15px #000000;
+  transition: box-shadow 0.5s ease-in-out;
+  margin: 100px;
 }
 
 .carousel-container:hover {
-   box-shadow: 0 0 25px #ffffff;
-   transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 25px #ffffff;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 /* Hide the images by default */
 .slides {
-   display: none;
+  display: none;
 }
 
 .slides img {
-   display: block;
-   width: 100%;
+  display: block;
+  width: 100%;
 }
 
 /* Next & previous buttons */
 .prev {
-   left: 25%;
-   width: auto;
-   display: flex;
-   padding: 20px 10px;
-   color: #F4EEE0;
-   font-size: 24px;
-   cursor: pointer;
-   margin-top: 30px;
-   user-select: none;
-   font-weight: bold;
-   position: absolute;
-   border-radius: 15px;
-   background: #393646;
-   box-shadow: 0 0 10px #000;
-   transition: background-color 0.2s ease-in-out;
+  left: 25%;
+  width: auto;
+  display: flex;
+  padding: 20px 10px;
+  color: #F4EEE0;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 30px;
+  user-select: none;
+  font-weight: bold;
+  position: absolute;
+  border-radius: 15px;
+  background: #393646;
+  box-shadow: 0 0 10px #000;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .next {
-   display: flex;
-   width: auto;
-   right: 25%;
-   padding: 20px 10px;
-   color: #F4EEE0;
-   cursor: pointer;
-   font-size: 24px;
-   margin-top: 30px;
-   font-weight: bold;
-   user-select: none;
-   position: absolute;
-   border-radius: 15px;
-   background: #393646;
-   box-shadow: 0 0 10px #000;
-   transition: background-color 0.2s ease-in-out;
+  display: flex;
+  width: auto;
+  right: 25%;
+  padding: 20px 10px;
+  color: #F4EEE0;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: bold;
+  user-select: none;
+  position: absolute;
+  border-radius: 15px;
+  background: #393646;
+  box-shadow: 0 0 10px #000;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .prev:hover,
 .next:hover {
-   box-shadow: 0 0 10px #fff;
-   background-color: #6D5D6E;
-   transition: background-color 0.2s ease-in;
+  box-shadow: 0 0 10px #fff;
+  background-color: #6D5D6E;
+  transition: background-color 0.2s ease-in;
 }
 
 /* Caption text */
 .text {
-   top: 7%;
-   left: 50%;
-   font-weight: bold;
-   color: #fff;
-   background-color: #abc4aaa8;
-   backdrop-filter: blur(2px);
-   border-radius: 10px;
-   font-size: 18px;
-   padding: 8px 10px;
-   position: absolute;
-   transform: translate(-50%);
-   text-align: center;
-   transition: all 0.5s ease;
+  top: 7%;
+  left: 50%;
+  font-weight: bold;
+  color: #fff;
+  background-color: #abc4aaa8;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 8px 10px;
+  position: absolute;
+  transform: translate(-50%);
+  text-align: center;
+  transition: all 0.5s ease;
 }
 
 .text:hover {
-   transition: background-color 0.4s ease-in;
-   box-shadow: 0 0 15px #000;
-   cursor: pointer;
+  transition: background-color 0.4s ease-in;
+  box-shadow: 0 0 15px #000;
+  cursor: pointer;
 }
 
 .dots-container {
-   display: flex;
-   justify-content: center;
-   position: absolute;
-   bottom: 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
 }
 
 /* The dots/bullets/indicators */
 .dots {
-   cursor: pointer;
-   height: 14px;
-   width: 14px;
-   margin: 5% 4px;
-   background-color: #fefae0;
-   backdrop-filter: blur(2px);
-   border-radius: 50%;
-   display: inline-block;
-   transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 5% 4px;
+  background-color: #fefae0;
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .active,
 .dots:hover {
-   background-color: #393646;
-   transition: background-color 0.2s ease-in;
+  background-color: #393646;
+  transition: background-color 0.2s ease-in;
 
 }
 
 /* transition animation */
 .animate {
-   animation-name: animate;
-   animation-duration: 1.2s;
+  animation-name: animate;
+  animation-duration: 1.2s;
 }
 
 /*****ID's*****/
 @keyframes animate {
-   from {
-      transform: scale(1.2);
-   }
+  from {
+    transform: scale(1.2);
+  }
 
-   to {
-      transform: scale(1);
-   }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ///////////////////////////////////////// ISHAN  //////////////////////////////////////////////////// */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  margin-bottom: 1.38rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  animation: spinner 0.6s linear infinite;
+}
+
+.loading {
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+/*
+=============== 
+Wikipedia 
+===============
+*/
+.wiki {
+  padding: 10rem;
+}
+
+.container-wiki {
+  text-align: center;
+}
+
+.container-wiki img {
+  width: 100px;
+}
+
+.container-wiki h3 {
+  margin: 2rem;
+}
+
+.results {
+  padding: 2rem 0;
+}
+
+.error {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--red-dark);
+}
+
+.articles {
+  display: grid;
+  gap: 1rem;
+}
+
+.articles a {
+  display: block;
+  background: var(--white);
+  color: var(--textColor);
+  padding: 1.5rem 2rem;
+  border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+
+.articles p {
+  color: var(--grey-500);
+  transition: var(--transition);
+}
+
+.articles a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.btn {
+  border: 1px solid #283618;
+  padding: 10px 50px;
+  color: #283618;
+  font-weight: 500;
+}
+
+.mtf {
+  margin-top: 90px;
+}
+
+.btn:hover {
+  background: #283618;
+  padding: 10px 50px;
+  color: #fefae0;
+  font-weight: 500;
+}
+
+:root {
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
