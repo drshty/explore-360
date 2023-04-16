@@ -44,7 +44,7 @@ function showSlides() {
 }
 
 // autoplay slides
-let timer = 10; // seconds
+let timer = 5; // seconds
 let intervalId = setInterval(nextSlide, timer * 1000);
 
 function resetTimer() {

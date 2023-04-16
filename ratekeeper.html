@@ -34,22 +34,47 @@
       </div>
    </nav>
    <div class="container text-center">
-      <div class="row justify-content-center">
-         <div class="container-wiki col-6 mt-5">
-            <img src="assets/Images/WikiWizard/wiki-logo.png" alt="Wikipedia-logo" />
-            <h3>Search WikiWizard</h3>
+      <div class="row mt-5 justify-content-center">
+         <div class="col-6 p-5">
             <form class="form">
+               <h3>Currency Converter</h3>
                <div class="form-floating mb-3">
-                  <input type="text" class="form-input form-control" id="floatingInput" placeholder="Search">
-                  <label for="floatingInput">Search</label>
+                  <input type="text" class="form-input form-control searchBox" id="floatingInput"
+                     placeholder="Enter Amount">
+                  <label for="floatingInput">Enter Amount To convert</label>
                </div>
-               <button type="submit" class="submit-btn btn">Submit</button>
+               <div class="form-floating">
+                  <select class="form-select from" id="floatingSelect sel1" aria-label="Floating label select example">
+                     <option selected value="">Select</option>
+                     <option value="USD">USD</option>
+                     <option value="INR">INR</option>
+                     <option value="CAD">CAD</option>
+                     <option value="EUR">EUR</option>
+                     <option value="AED">AED</option>
+                  </select>
+                  <label for="floatingSelect">From</label>
+               </div>
+               <div class="mt-3 form-floating">
+                  <select class="form-select to" id="floatingSelect sel2" aria-label="Floating label select example">
+                     <option selected value="">Select</option>
+                     <option value="USD">USD</option>
+                     <option value="INR">INR</option>
+                     <option value="CAD">CAD</option>
+                     <option value="EUR">EUR</option>
+                     <option value="AED">AED</option>
+                  </select>
+                  <label for="floatingSelect">To</label>
+               </div>
+               <div id="finalAmount">
+                  <h3>Converted Amount : <span class="finalValue"></span></h3>
+               </div>
+               <button type="submit" class="m-4 submit-btn convert btn">Convert</button>
+               <button type="submit" class="submit-btn reset btn">Reset</button>
             </form>
          </div>
-         <div class="results"></div>
       </div>
    </div>
-   <div class="card footer mtf text-center rounded-0">
+   <div class="card footer mt-3 text-center rounded-0">
       <div class="card-header pt-3">
          <i class='bx bxl-twitter'></i>
          <i class='bx ps-4 bxl-instagram-alt'></i>
@@ -65,8 +90,7 @@
          &copy; All Right Reserved | Explore360 Ltd.
       </div>
    </div>
-
-   <script src="scripts/wikiwizard.js"></script>
+   <script src="scripts/ratekeeper.js"></script>
 </body>
 
 </html>

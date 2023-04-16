@@ -380,3 +380,12 @@ Wikipedia
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* ////////////////////////////////////////////  TWINKLE ///////////////////////////////////////////////////////// */
+
+  
+  #finalAmount {
+    display: none;
+    margin-top: 20px;
+  
+  }
