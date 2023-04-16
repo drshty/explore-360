@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 
+* {
+   scroll-behavior: smooth;
+}
+
 .logo {
    color: #283618;
    font-size: 35px;
@@ -45,4 +49,163 @@ i:hover {
 
 .footer {
    background-color: #fefae0;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/******Tags******/
+body {
+   width: 100%;
+}
+
+
+/**********Classes**********/
+.main-body {
+   background-repeat: no-repeat;
+   background-position: relative;
+   background-size: cover;
+   background-image: url("/assets/Images/Wonderhub/background_main.jpg");
+   font-family: "@Microsoft YaHei Light";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.carousel-container {
+   display: flex;
+   justify-content: center;
+   border-radius: 20px;
+   overflow: hidden;
+   width: 800px;
+   position: relative;
+   box-shadow: 0 0 15px #000000;
+   transition: box-shadow 0.5s ease-in-out;
+   margin: 100px;
+}
+
+.carousel-container:hover {
+   box-shadow: 0 0 25px #ffffff;
+   transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Hide the images by default */
+.slides {
+   display: none;
+}
+
+.slides img {
+   display: block;
+   width: 100%;
+}
+
+/* Next & previous buttons */
+.prev {
+   left: 25%;
+   width: auto;
+   display: flex;
+   padding: 20px 10px;
+   color: #F4EEE0;
+   font-size: 24px;
+   cursor: pointer;
+   margin-top: 30px;
+   user-select: none;
+   font-weight: bold;
+   position: absolute;
+   border-radius: 15px;
+   background: #393646;
+   box-shadow: 0 0 10px #000;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.next {
+   display: flex;
+   width: auto;
+   right: 25%;
+   padding: 20px 10px;
+   color: #F4EEE0;
+   cursor: pointer;
+   font-size: 24px;
+   margin-top: 30px;
+   font-weight: bold;
+   user-select: none;
+   position: absolute;
+   border-radius: 15px;
+   background: #393646;
+   box-shadow: 0 0 10px #000;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.prev:hover,
+.next:hover {
+   box-shadow: 0 0 10px #fff;
+   background-color: #6D5D6E;
+   transition: background-color 0.2s ease-in;
+}
+
+/* Caption text */
+.text {
+   top: 7%;
+   left: 50%;
+   font-weight: bold;
+   color: #fff;
+   background-color: #abc4aaa8;
+   backdrop-filter: blur(2px);
+   border-radius: 10px;
+   font-size: 18px;
+   padding: 8px 10px;
+   position: absolute;
+   transform: translate(-50%);
+   text-align: center;
+   transition: all 0.5s ease;
+}
+
+.text:hover {
+   transition: background-color 0.4s ease-in;
+   box-shadow: 0 0 15px #000;
+   cursor: pointer;
+}
+
+.dots-container {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+   cursor: pointer;
+   height: 14px;
+   width: 14px;
+   margin: 5% 4px;
+   background-color: #fefae0;
+   backdrop-filter: blur(2px);
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.active,
+.dots:hover {
+   background-color: #393646;
+   transition: background-color 0.2s ease-in;
+
+}
+
+/* transition animation */
+.animate {
+   animation-name: animate;
+   animation-duration: 1.2s;
+}
+
+/*****ID's*****/
+@keyframes animate {
+   from {
+      transform: scale(1.2);
+   }
+
+   to {
+      transform: scale(1);
+   }
 }
