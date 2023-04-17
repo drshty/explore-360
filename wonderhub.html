@@ -1,3 +1,5 @@
+<!-- Code by Karan Dhiman, std id: 8877564 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +17,11 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
    <link rel="stylesheet" href="styles/style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="styles/jquery-ui.min.css">
+
 </head>
 
 <body>
@@ -33,7 +40,19 @@
          </div>
       </div>
    </nav>
+   
    <div class="main-body">
+      <div id="drop-menu">
+         <h3><a href="#" class="ui-accordion-header-icon">7 Wonders of the World!</a></h3>
+         <div>
+           <p>The Seven Wonders of the World are a group of remarkable structures and monuments from ancient 
+             times that have captivated people for centuries. These architectural marvels are celebrated for 
+             their grandeur, sophistication, and engineering prowess, and have inspired awe and wonder in generations 
+             of people across the globe.
+          </p>
+          <p class="small-text">(Click the header to close)</p>
+         </div>
+       </div>
       <div class="carousel-container">
          <div class="slides animate">
             <div class="text">The Colosseum, Rome, Italy</div>
@@ -83,6 +102,7 @@
       <a class="prev" onclick="prevSlide()"><span class="carousel-control-prev-icon"></span></a>
       <a class="next" onclick="nextSlide()"><span class="carousel-control-next-icon"></span></a>
    </div>
+
    <div class="card footer text-center rounded-0">
       <div class="card-header pt-3">
          <i class='bx bxl-twitter'></i>
@@ -102,5 +122,5 @@
 
    <script src="scripts/wonderhub.js"></script>
 </body>
-
 </html>
+
